@@ -1,0 +1,18 @@
+.footer-container {
+  width: 100%;
+  position: relative;
+  height: 20rem;
+  bottom: 0;
+  background-color: #126f84;
+}
+
+.footer-container h1 {
+  padding-top: 2rem;
+  color: white;
+  font-size: 5rem;
+}
+
+.footer-container div {
+  font-size: 2rem;
+  color: white;
+}

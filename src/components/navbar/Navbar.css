@@ -1,0 +1,26 @@
+.navbar-container {
+  display: flex;
+  width: 100%;
+  background-color: #126f84;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+}
+.navbar-mini-container {
+  display: flex;
+  text-transform: uppercase;
+  background-color: transparent;
+  /* background-color: black; */
+  width: 60%;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-container .navbar-mini-container li {
+  list-style: none;
+  color: white;
+  margin: 0 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
