@@ -34,6 +34,7 @@ option {
 
 .search-button {
   width: 10rem;
+  margin: auto;
   cursor: pointer;
   /* height: 2rem; */
   padding: 0.5rem;
@@ -51,9 +52,6 @@ button:hover {
 }
 
 .search-box {
-  display: flex;
-  /* border: 1px solid red; */
-  justify-content: space-around;
   padding: 1rem;
   color: white;
   background-color: #126f84;
@@ -64,9 +62,9 @@ button:hover {
   width: 60%;
   margin: 3rem auto;
 }
-/* .search-box .name {
+
+.nodata {
+  color: rgb(169, 33, 33);
+  font-size: 3rem;
+  margin: 2rem;
 }
-.search-box .location {
-}
-.search-box .role {
-} */

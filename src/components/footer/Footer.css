@@ -8,11 +8,13 @@
 
 .footer-container h1 {
   padding-top: 2rem;
+  text-align: center;
   color: white;
   font-size: 5rem;
 }
 
 .footer-container div {
+  text-align: center;
   font-size: 2rem;
   color: white;
 }

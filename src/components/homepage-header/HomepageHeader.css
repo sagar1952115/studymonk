@@ -8,6 +8,7 @@
   background-color: #126f84;
   width: 100vw;
   height: 70vh;
+  border-radius: 0 0 10rem 10rem;
   /* position: absolute;
   top: 0;
   z-index: -1; */
@@ -15,17 +16,9 @@
 
 .header-inner-container h1 {
   font-size: 6rem;
-  /* position: absolute; */
+  text-align: center;
   margin-top: 10rem;
-  left: 0;
-  right: 0;
   color: white;
   font-weight: 400;
   letter-spacing: 0.3rem;
-}
-
-.wave-container {
-  /* margin-top: 2rem; */
-
-  display: flex;
 }

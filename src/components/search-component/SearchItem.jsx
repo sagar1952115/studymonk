@@ -1,22 +1,25 @@
 import React from "react";
 
-const SearchItem = ({ data }) => {
+const SearchItem = ({ res }) => {
   return (
     <div>
-      <div className="searchitem-container">
-        {data.map((curr) => {
+      <table className="searchitem-container">
+        <tr>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Role</th>
+        </tr>
+
+        {res.map((curr) => {
           return (
-            <table className="search-box">
-              <td className="name">{curr.name}</td>
-              <tr className="location">{curr.location}</tr>
-              <tr className="role">{curr.jobRole}</tr>
-            </table>
+            <tr className="search-box">
+              <td>{curr.name}</td>
+              <td>{curr.location}</td>
+              <td>{curr.jobRole}</td>
+            </tr>
           );
         })}
-      </div>
-      <div className="name"></div>
-      <div className="location"></div>
-      <div className="role"></div>
+      </table>
     </div>
   );
 };

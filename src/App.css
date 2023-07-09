@@ -23,6 +23,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.nolink {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .App-link {
   color: #61dafb;

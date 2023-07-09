@@ -7,6 +7,7 @@ const SearchComponent = () => {
   const [location, setLocation] = useState("");
   const [role, setRole] = useState("");
   const [res, setRes] = useState([]);
+  const [searched, setSearched] = useState(false);
   function filterData(data, location, jobRole) {
     return data.filter((item) => {
       return (
@@ -17,6 +18,7 @@ const SearchComponent = () => {
   }
 
   const getData = () => {
+    setSearched(true);
     const info = filterData(data, location, role);
     setRes(info);
   };
@@ -61,8 +63,12 @@ const SearchComponent = () => {
         <button className="search-button" onClick={getData}>
           Search
         </button>
-        {res.length > 0 && <SearchItem data={res} />}
-        {res.length === 0 && <div>Candidate not available</div>}
+        {/* {res.length > 0 && <SearchItem data={res} />}
+        {res.length === 0 && <div>Candidate not available</div>} */}
+        {searched && res.length === 0 && (
+          <div className="nodata">Candidate not available !!!</div>
+        )}
+        {searched && res.length > 0 && <SearchItem res={res} />}
       </div>
     </div>
   );
